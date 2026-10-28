@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<datasource formatted-name='ev_market_data_tableau_ds' inline='true' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <connection class='federated'>
+    <named-connections>
+      <named-connection caption='MongoDB_EV_Fleet' name='mongodb_bi_conn'>
+        <connection class='mongodb_bi' dbname='automotive_bi' odbc-connect-string-extras='' port='3307' server='localhost' username='tableau_bi_user' />
+      </named-connection>
+    </named-connections>
+    <relation connection='mongodb_bi_conn' name='ev_global_fleet' table='[ev_global_fleet]' type='table' />
+    <cols>
+      <map key='[vehicle_id]' value='[ev_global_fleet].[vehicle_id]' />
+      <map key='[manufacturer]' value='[ev_global_fleet].[manufacturer]' />
+      <map key='[model]' value='[ev_global_fleet].[model]' />
+      <map key='[vehicle_category]' value='[ev_global_fleet].[vehicle_category]' />
+      <map key='[battery_technology]' value='[ev_global_fleet].[battery_technology]' />
+      <map key='[battery_capacity_kwh]' value='[ev_global_fleet].[battery_capacity_kwh]' />
+      <map key='[driving_range_km]' value='[ev_global_fleet].[driving_range_km]' />
+      <map key='[base_price_usd]' value='[ev_global_fleet].[base_price_usd]' />
+      <map key='[annual_sales_units]' value='[ev_global_fleet].[annual_sales_units]' />
+      <map key='[customer_rating]' value='[ev_global_fleet].[customer_rating]' />
+      <map key='[manufacturing_country]' value='[ev_global_fleet].[manufacturing_country]' />
+      <map key='[fast_charging_time_min]' value='[ev_global_fleet].[fast_charging_time_min]' />
+      <map key='[energy_consumption_wh_per_km]' value='[ev_global_fleet].[energy_consumption_wh_per_km]' />
+      <map key='[co2_emissions_saved_tons_year]' value='[ev_global_fleet].[co2_emissions_saved_tons_year]' />
+      <map key='[release_year]' value='[ev_global_fleet].[release_year]' />
+    </cols>
+  </connection>
+  <column datatype='string' name='[vehicle_id]' role='dimension' type='nominal' />
+  <column datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+  <column datatype='string' name='[model]' role='dimension' type='nominal' />
+  <column datatype='string' name='[vehicle_category]' role='dimension' type='nominal' />
+  <column datatype='string' name='[battery_technology]' role='dimension' type='nominal' />
+  <column datatype='real' name='[battery_capacity_kwh]' role='measure' type='quantitative' />
+  <column datatype='integer' name='[driving_range_km]' role='measure' type='quantitative' />
+  <column datatype='integer' name='[base_price_usd]' role='measure' type='quantitative' />
+  <column datatype='integer' name='[annual_sales_units]' role='measure' type='quantitative' />
+  <column datatype='real' name='[customer_rating]' role='measure' type='quantitative' />
+  <column datatype='string' name='[manufacturing_country]' role='dimension' type='nominal'>
+    <semantic-values>
+      <semantic-value key='[Country]' value='&quot;ISO-3166-1&quot;' />
+    </semantic-values>
+  </column>
+  <column datatype='integer' name='[fast_charging_time_min]' role='measure' type='quantitative' />
+  <column datatype='real' name='[energy_consumption_wh_per_km]' role='measure' type='quantitative' />
+  <column datatype='real' name='[co2_emissions_saved_tons_year]' role='measure' type='quantitative' />
+  <column datatype='integer' name='[release_year]' role='dimension' type='ordinal' />
+
+  <!-- Calculated Fields Defined for Tableau -->
+  <column caption='Range-to-Price Ratio' datatype='real' name='[Calculation_Range_Price]' role='measure' type='quantitative'>
+    <calculation class='tableau' formula='([driving_range_km] / [base_price_usd]) * 1000' />
+  </column>
+  <column caption='Battery Efficiency (km/kWh)' datatype='real' name='[Calculation_Battery_Efficiency]' role='measure' type='quantitative'>
+    <calculation class='tableau' formula='[driving_range_km] / [battery_capacity_kwh]' />
+  </column>
+  <column caption='Total CO2 Abatement (Tons)' datatype='real' name='[Calculation_Total_CO2_Abatement]' role='measure' type='quantitative'>
+    <calculation class='tableau' formula='[annual_sales_units] * [co2_emissions_saved_tons_year]' />
+  </column>
+  <column caption='Customer Value Score' datatype='real' name='[Calculation_Customer_Value]' role='measure' type='quantitative'>
+    <calculation class='tableau' formula='([customer_rating] / 5.0) * ([driving_range_km] / ([base_price_usd] / 10000))' />
+  </column>
+  <column caption='Fast Charge Speed Index' datatype='real' name='[Calculation_Charge_Speed]' role='measure' type='quantitative'>
+    <calculation class='tableau' formula='[battery_capacity_kwh] / [fast_charging_time_min]' />
+  </column>
+</datasource>

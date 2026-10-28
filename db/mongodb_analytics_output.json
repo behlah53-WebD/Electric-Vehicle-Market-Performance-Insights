@@ -1,0 +1,387 @@
+{
+  "pipeline_1_category_sales": {
+    "execution_time_ms": 1.439,
+    "data": [
+      {
+        "category": "SUV",
+        "total_sales_units": 76453738,
+        "market_share_pct": 48.62,
+        "estimated_revenue_usd": 4895375400700,
+        "avg_driving_range_km": 477.3,
+        "models_analyzed": 448
+      },
+      {
+        "category": "Sedan",
+        "total_sales_units": 50749634,
+        "market_share_pct": 32.27,
+        "estimated_revenue_usd": 3558983260400,
+        "avg_driving_range_km": 512.5,
+        "models_analyzed": 355
+      },
+      {
+        "category": "Hatchback",
+        "total_sales_units": 20488703,
+        "market_share_pct": 13.03,
+        "estimated_revenue_usd": 639472661300,
+        "avg_driving_range_km": 357.3,
+        "models_analyzed": 222
+      },
+      {
+        "category": "Truck",
+        "total_sales_units": 4794438,
+        "market_share_pct": 3.05,
+        "estimated_revenue_usd": 454958948100,
+        "avg_driving_range_km": 542.3,
+        "models_analyzed": 101
+      },
+      {
+        "category": "Two-Wheeler",
+        "total_sales_units": 4382196,
+        "market_share_pct": 2.79,
+        "estimated_revenue_usd": 48972642000,
+        "avg_driving_range_km": 235.4,
+        "models_analyzed": 68
+      },
+      {
+        "category": "Electric Bus",
+        "total_sales_units": 385009,
+        "market_share_pct": 0.24,
+        "estimated_revenue_usd": 146681225700,
+        "avg_driving_range_km": 345.8,
+        "models_analyzed": 56
+      }
+    ]
+  },
+  "pipeline_2_manufacturer_market_share": {
+    "execution_time_ms": 0.982,
+    "data": [
+      {
+        "manufacturer": "BYD",
+        "total_sales": 16967803,
+        "market_share_pct": 10.79,
+        "avg_customer_rating": 4.36,
+        "portfolio_breadth": 156,
+        "technologies_used": [
+          "Nickel Cobalt Aluminum (NCA)",
+          "Nickel Manganese Cobalt (NMC)",
+          "Sodium-Ion",
+          "Lithium Iron Phosphate (LFP)",
+          "Solid-State"
+        ]
+      },
+      {
+        "manufacturer": "Volkswagen",
+        "total_sales": 14870524,
+        "market_share_pct": 9.46,
+        "avg_customer_rating": 4.18,
+        "portfolio_breadth": 116,
+        "technologies_used": [
+          "Nickel Cobalt Aluminum (NCA)",
+          "Nickel Manganese Cobalt (NMC)",
+          "Sodium-Ion",
+          "Lithium Iron Phosphate (LFP)",
+          "Solid-State"
+        ]
+      },
+      {
+        "manufacturer": "BMW",
+        "total_sales": 14634480,
+        "market_share_pct": 9.31,
+        "avg_customer_rating": 4.39,
+        "portfolio_breadth": 116,
+        "technologies_used": [
+          "Nickel Cobalt Aluminum (NCA)",
+          "Nickel Manganese Cobalt (NMC)",
+          "Sodium-Ion",
+          "Lithium Iron Phosphate (LFP)",
+          "Solid-State"
+        ]
+      },
+      {
+        "manufacturer": "Mercedes-Benz",
+        "total_sales": 12662725,
+        "market_share_pct": 8.05,
+        "avg_customer_rating": 4.45,
+        "portfolio_breadth": 98,
+        "technologies_used": [
+          "Nickel Cobalt Aluminum (NCA)",
+          "Nickel Manganese Cobalt (NMC)",
+          "Sodium-Ion",
+          "Lithium Iron Phosphate (LFP)",
+          "Solid-State"
+        ]
+      },
+      {
+        "manufacturer": "Tesla",
+        "total_sales": 12458159,
+        "market_share_pct": 7.92,
+        "avg_customer_rating": 4.56,
+        "portfolio_breadth": 109,
+        "technologies_used": [
+          "Nickel Cobalt Aluminum (NCA)",
+          "Nickel Manganese Cobalt (NMC)",
+          "Sodium-Ion",
+          "Lithium Iron Phosphate (LFP)",
+          "Solid-State"
+        ]
+      },
+      {
+        "manufacturer": "General Motors",
+        "total_sales": 11165452,
+        "market_share_pct": 7.1,
+        "avg_customer_rating": 4.21,
+        "portfolio_breadth": 112,
+        "technologies_used": [
+          "Nickel Cobalt Aluminum (NCA)",
+          "Nickel Manganese Cobalt (NMC)",
+          "Sodium-Ion",
+          "Lithium Iron Phosphate (LFP)",
+          "Solid-State"
+        ]
+      },
+      {
+        "manufacturer": "NIO",
+        "total_sales": 10963829,
+        "market_share_pct": 6.97,
+        "avg_customer_rating": 4.37,
+        "portfolio_breadth": 81,
+        "technologies_used": [
+          "Lithium Iron Phosphate (LFP)",
+          "Nickel Cobalt Aluminum (NCA)",
+          "Sodium-Ion",
+          "Nickel Manganese Cobalt (NMC)"
+        ]
+      },
+      {
+        "manufacturer": "Hyundai",
+        "total_sales": 10358594,
+        "market_share_pct": 6.59,
+        "avg_customer_rating": 4.42,
+        "portfolio_breadth": 74,
+        "technologies_used": [
+          "Nickel Cobalt Aluminum (NCA)",
+          "Nickel Manganese Cobalt (NMC)",
+          "Sodium-Ion",
+          "Lithium Iron Phosphate (LFP)",
+          "Solid-State"
+        ]
+      },
+      {
+        "manufacturer": "Lucid Motors",
+        "total_sales": 9540227,
+        "market_share_pct": 6.07,
+        "avg_customer_rating": 4.69,
+        "portfolio_breadth": 57,
+        "technologies_used": [
+          "Nickel Cobalt Aluminum (NCA)",
+          "Nickel Manganese Cobalt (NMC)",
+          "Sodium-Ion",
+          "Lithium Iron Phosphate (LFP)",
+          "Solid-State"
+        ]
+      },
+      {
+        "manufacturer": "Volvo",
+        "total_sales": 8912980,
+        "market_share_pct": 5.67,
+        "avg_customer_rating": 4.34,
+        "portfolio_breadth": 91,
+        "technologies_used": [
+          "Lithium Iron Phosphate (LFP)",
+          "Nickel Cobalt Aluminum (NCA)",
+          "Sodium-Ion",
+          "Nickel Manganese Cobalt (NMC)"
+        ]
+      },
+      {
+        "manufacturer": "Kia",
+        "total_sales": 8753894,
+        "market_share_pct": 5.57,
+        "avg_customer_rating": 4.4,
+        "portfolio_breadth": 59,
+        "technologies_used": [
+          "Nickel Cobalt Aluminum (NCA)",
+          "Nickel Manganese Cobalt (NMC)",
+          "Sodium-Ion",
+          "Lithium Iron Phosphate (LFP)",
+          "Solid-State"
+        ]
+      },
+      {
+        "manufacturer": "Polestar",
+        "total_sales": 8621603,
+        "market_share_pct": 5.48,
+        "avg_customer_rating": 4.36,
+        "portfolio_breadth": 57,
+        "technologies_used": [
+          "Nickel Cobalt Aluminum (NCA)",
+          "Nickel Manganese Cobalt (NMC)",
+          "Sodium-Ion",
+          "Lithium Iron Phosphate (LFP)",
+          "Solid-State"
+        ]
+      },
+      {
+        "manufacturer": "Audi",
+        "total_sales": 7451498,
+        "market_share_pct": 4.74,
+        "avg_customer_rating": 4.36,
+        "portfolio_breadth": 40,
+        "technologies_used": [
+          "Nickel Cobalt Aluminum (NCA)",
+          "Nickel Manganese Cobalt (NMC)",
+          "Sodium-Ion",
+          "Lithium Iron Phosphate (LFP)",
+          "Solid-State"
+        ]
+      },
+      {
+        "manufacturer": "Ford",
+        "total_sales": 6271493,
+        "market_share_pct": 3.99,
+        "avg_customer_rating": 4.29,
+        "portfolio_breadth": 55,
+        "technologies_used": [
+          "Nickel Cobalt Aluminum (NCA)",
+          "Nickel Manganese Cobalt (NMC)",
+          "Sodium-Ion",
+          "Lithium Iron Phosphate (LFP)",
+          "Solid-State"
+        ]
+      },
+      {
+        "manufacturer": "Rivian",
+        "total_sales": 3620457,
+        "market_share_pct": 2.3,
+        "avg_customer_rating": 4.52,
+        "portfolio_breadth": 29,
+        "technologies_used": [
+          "Lithium Iron Phosphate (LFP)",
+          "Nickel Cobalt Aluminum (NCA)",
+          "Nickel Manganese Cobalt (NMC)"
+        ]
+      }
+    ]
+  },
+  "pipeline_3_battery_technologies": {
+    "execution_time_ms": 1.027,
+    "data": [
+      {
+        "battery_technology": "Lithium Iron Phosphate (LFP)",
+        "total_sales_volume": 62308695,
+        "technology_share_pct": 39.62,
+        "avg_driving_range_km": 477.5,
+        "avg_fast_charge_min": 30.8,
+        "avg_efficiency_km_kwh": 6.66
+      },
+      {
+        "battery_technology": "Nickel Manganese Cobalt (NMC)",
+        "total_sales_volume": 61626118,
+        "technology_share_pct": 39.19,
+        "avg_driving_range_km": 430.9,
+        "avg_fast_charge_min": 24.4,
+        "avg_efficiency_km_kwh": 6.28
+      },
+      {
+        "battery_technology": "Nickel Cobalt Aluminum (NCA)",
+        "total_sales_volume": 23478891,
+        "technology_share_pct": 14.93,
+        "avg_driving_range_km": 452.9,
+        "avg_fast_charge_min": 25.7,
+        "avg_efficiency_km_kwh": 7.22
+      },
+      {
+        "battery_technology": "Sodium-Ion",
+        "total_sales_volume": 6563079,
+        "technology_share_pct": 4.17,
+        "avg_driving_range_km": 370.4,
+        "avg_fast_charge_min": 19.5,
+        "avg_efficiency_km_kwh": 5.53
+      },
+      {
+        "battery_technology": "Solid-State",
+        "total_sales_volume": 3276935,
+        "technology_share_pct": 2.08,
+        "avg_driving_range_km": 542.5,
+        "avg_fast_charge_min": 13.2,
+        "avg_efficiency_km_kwh": 8.31
+      }
+    ]
+  },
+  "pipeline_4_manufacturing_countries": {
+    "execution_time_ms": 0.684,
+    "data": [
+      {
+        "country": "Germany",
+        "production_sales_units": 42284281,
+        "country_share_pct": 26.89,
+        "models_produced": 312,
+        "total_co2_abatement_tons": 176401535.8
+      },
+      {
+        "country": "USA",
+        "production_sales_units": 34191194,
+        "country_share_pct": 21.74,
+        "models_produced": 294,
+        "total_co2_abatement_tons": 149523404.5
+      },
+      {
+        "country": "China",
+        "production_sales_units": 25393866,
+        "country_share_pct": 16.15,
+        "models_produced": 214,
+        "total_co2_abatement_tons": 107485968.2
+      },
+      {
+        "country": "Sweden",
+        "production_sales_units": 19385472,
+        "country_share_pct": 12.33,
+        "models_produced": 153,
+        "total_co2_abatement_tons": 85276777.9
+      },
+      {
+        "country": "South Korea",
+        "production_sales_units": 18977351,
+        "country_share_pct": 12.07,
+        "models_produced": 138,
+        "total_co2_abatement_tons": 78595390.7
+      },
+      {
+        "country": "India",
+        "production_sales_units": 6565408,
+        "country_share_pct": 4.18,
+        "models_produced": 51,
+        "total_co2_abatement_tons": 27510987.8
+      },
+      {
+        "country": "Mexico",
+        "production_sales_units": 5927865,
+        "country_share_pct": 3.77,
+        "models_produced": 48,
+        "total_co2_abatement_tons": 26051502.5
+      },
+      {
+        "country": "France",
+        "production_sales_units": 4528281,
+        "country_share_pct": 2.88,
+        "models_produced": 40,
+        "total_co2_abatement_tons": 19740711.1
+      }
+    ]
+  },
+  "performance_metrics": {
+    "total_documents_rendered": 1250,
+    "collection_name": "ev_global_fleet",
+    "database_name": "automotive_bi",
+    "indexes_active": [
+      "idx_category_year",
+      "idx_mfg_sales",
+      "idx_battery_range",
+      "idx_country",
+      "idx_price_rating"
+    ],
+    "index_count": 5,
+    "avg_query_latency_ms": 1.033,
+    "data_throughput_records_sec": 104167.0
+  }
+}
